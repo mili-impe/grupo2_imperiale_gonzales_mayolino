@@ -1,0 +1,136 @@
+/* Colores */
+:root {
+  --brown-700: #7b4f2c;
+  --accent: #F9C06A;
+  --bg-page: #FFFEFC;
+}
+
+body {
+  background: var(--bg-page);
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+/* NAV */
+.bg-brown {
+  background-color: var(--brown-700) !important;
+}
+
+.logo_cf {
+  width: 5rem;      /* 80px */
+  height: 3.125rem; /* 50px */
+  object-fit: cover;
+}
+
+/* HERO */
+.hero {
+  background-image: url('img/coffee_image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 60vh;
+  padding: 4rem 1rem; /* ya estaba en rem */
+}
+
+
+.btn-cta {
+  background-color: var(--accent);
+  color: #1E1E1E;
+  border-radius: 1.5rem; /* 24px */
+  font-weight: 700;
+}
+
+/* TITULOS */
+.title2 {
+  color: #603809;
+  font-weight: 700;
+  font-size: 2rem; /* queda igual */
+}
+.card {
+  width: 20rem;          /* Misma medida para todos */
+  height: 32rem;         /* <- Ajusta esto si querés más alto o más bajo */
+  border-radius: .75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Acomoda todo */
+}
+
+
+.card-body {
+  flex: 1; /* empuja el botón hacia abajo y unifica alturas */
+}
+
+
+.card-img-top {
+  height: 14rem;  /* Todas las imágenes iguales */
+  object-fit: cover;
+  width: 100%;
+}
+
+
+
+/* INFO PILLS */
+.info-pill {
+  background: #fff9f4;
+  border-radius: .75rem; /* 12px */
+  box-shadow: 0 .375rem 1.125rem rgba(0,0,0,0.06); /* 6px 18px */
+}
+
+.pointer { cursor: pointer; }
+
+/* PRODUCTOS */
+.cards-cafe { gap: 1rem; } /* ya en rem */
+
+.card {
+  max-width: 20rem; /* 320px */
+  border-radius: .75rem; /* 12px */
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.06); /* 8px 24px */
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-.375rem); /* -6px */
+  box-shadow: 0 .875rem 2.125rem rgba(0,0,0,0.12); /* 14px 34px */
+}
+
+.precio {
+  font-weight: 700;
+  color: #5e3b1e;
+}
+
+/* TESTIMONIALES */
+.testimonial-img {
+  width: 5rem;    /* 80px */
+  height: 5rem;   /* 80px */
+  object-fit: cover;
+  border: .1875rem solid #fff; /* 3px */
+}
+
+/* CARRITO */
+.sticky-cart {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  background: rgba(123,79,44,0.97);
+  color: white;
+  padding: .8rem 0; /* ya en rem */
+  z-index: 999;
+}
+
+.cart-item {
+  border-bottom: 1px dashed rgba(255,255,255,.2);
+}
+
+/* FOOTER */
+footer a {
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .hero {
+    min-height: 80vh;
+    padding: 6rem 0;
+  }
+}
