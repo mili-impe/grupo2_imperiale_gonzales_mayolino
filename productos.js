@@ -3,7 +3,7 @@ const productos = [
     nombre: "Capuccino",
     descripcion: "Café 50% - Leche 50%",
     precio: 8500,
-    imagen: "IMG/Rectangle7.jpg"
+    imagen: "img/Rectangle7.jpg"
   },
   {
     nombre: "Chai Latte",
@@ -71,3 +71,4 @@ productos.forEach(prod => {
     </div>
   `;
 });
+
